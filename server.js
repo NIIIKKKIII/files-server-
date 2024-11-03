@@ -6,7 +6,7 @@ const app = express();
 app.get('/files', function(req, res){
     fs.readdir(path.join(__dirname), (err, data)=>{
         if(err){
-            return res.json("cannot file the fucking file")
+            return res.json("cannot find the fucking file")
         }else{
             res.send(data)
         }
